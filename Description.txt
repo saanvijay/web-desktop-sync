@@ -1,0 +1,17 @@
+You have two discrete Applications. One is a Desktop application and other one is a web based
+application. The web-based application can be integrated with desktop application and support various
+user workflows. The Desktop  application will pass certain metadata to the web application. Using this
+metadata, the web application will communicate with external systems and produce additional data
+periodically. The periodicity is defined by the Desktop  system and passed via metadata. In this System,
+two applications are collaborating to give seamless one-application experience to the user. This system
+has to satisfy the following requirements;
+ 
+        1) The generated data in the webapp has to be updated to the Desktop  system ASAP.
+        2) Any changes in the Desktop  system, should be communicated to webapp reliably, and the
+functionality of webapp changes accordingly.
+        3) In case of failures like application crash, the Desktop  system should be able to rerun the
+upload/download.
+        4) The Desktop  system should be capable of uploading/downloading the data at the same time.
+ 
+ Prefer the Desktop  system to be in C++/C# where all the REST API calls are made via C#.  
+ The webapp can be of any technology stack of your choice. Using Node.JS will expedite this implementation.
